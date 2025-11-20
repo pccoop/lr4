@@ -27,11 +27,7 @@ namespace BaseCalculator
             bAnswer.Focus();
         }
         #endregion
-        /// <summary>
-        /// Вычисляем входное выражение
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        
         private void bAnswer_Click(object sender, EventArgs e)
         {
             AnalaizerClass.expression = textBoxExpression.Text;
@@ -124,11 +120,6 @@ namespace BaseCalculator
         }
         #endregion
 
-        /// <summary>
-        /// Удаляем последний оператор
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void bBackSpace_Click(object sender, EventArgs e)
         {
             if (textBoxExpression.Text.Length >= 3)
@@ -150,11 +141,7 @@ namespace BaseCalculator
                 }
             }
         }
-        /// <summary>
-        /// Очищаем текст
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+       
         private void bEmpty_Click(object sender, EventArgs e)
         {
             textBoxExpression.Text = "";
@@ -190,11 +177,7 @@ namespace BaseCalculator
         }
         #endregion
 
-        /// <summary>
-        /// Унарный плюс минус
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        
         private void bPlusMinus_Click(object sender, EventArgs e)
         {
             if (-dt.Second + DateTime.Now.Second <= 1)
@@ -237,4 +220,5 @@ namespace BaseCalculator
             }
         }
     }
+
 }
